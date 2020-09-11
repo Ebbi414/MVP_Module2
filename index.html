@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My-Login-Page</title>
+  </head>
+
+<style>
+  div#failedPage, div#welcomePage {
+    /*display: inline-block;*/
+    position: absolute;
+    top: 0px;
+    right: 1;
+  };
+</style>
+
+  <div id="logInPage">
+    <h1 id="title" >MVP_M2: Login Page</h1>
+    <fieldset>
+      <legend>Insert Username and Password</legend>
+      <input id="userName" type="text" placeholder="Enter your username">
+      <input id="password" type="text" placeholder="Enter your password">
+      <button type="button" id="btnLogin" onclick="login()" 
+      style="background-color:lightblue;" style="align-items:normal"><b>Login</b>
+       </button> 
+    </fieldset>
+  </div>
+
+  <div id="welcomePage" style="visibility: hidden; background-color:rgb(194, 255, 80)"> 
+    <h2 id="title2" >Welcome Page</h2>
+    <fieldset>
+      <legend><b>Successful Login</b></legend>
+      <P>Welcome to your page!</P>
+      <button type="button" id="btnLogout" onclick="logout()"><b>Logout</b></button>
+    </fieldset>
+  </div>
+  
+  <div id="failedPage" style="visibility: hidden; background-color:rgb(255, 86, 80)">
+    <h3 id="title3" >Login Failed!</h2>
+    <fieldset>
+      <legend><b>Ops</b></legend>
+      <P>Sorry! Your input username or password was wrong! </P>
+      <p>Please try again!</p> 
+      <button type="button" id="btnBackt" onclick="backToLogin()"><b>Back</b></button>
+    </fieldset>
+  </div>
+
+  <script src="./MVP_M2.js"></script>
+
+
+</html>
